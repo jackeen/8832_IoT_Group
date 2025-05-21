@@ -1,0 +1,32 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{10cm}|}
+\hline
+\textbf{ID} & TC-05 \\
+\hline
+\textbf{Title} & Verify full workflow: API $\rightarrow$ Node-RED $\rightarrow$ InfluxDB/MQTT \\
+\hline
+\textbf{Preconditions} & ALL services are online \\
+\hline
+\textbf{Steps} & \vspace{-20pt}\begin{enumerate}
+    \item Fetch weather data from OpenWeather
+    \item Observe alert logic and publishing
+    \item Confirm MQTT and InfluxDB both receive valid output
+\end{enumerate} \\
+\hline
+\textbf{Expected Result} & \vspace{-20pt}\begin{enumerate}
+    \item Input from OpenWeather matched values seen in both MQTT output and InfluxDB records
+    \item No data loss or mismatch detected.
+\end{enumerate} \\
+\hline
+\textbf{Actual Result} & \vspace{-20pt}\begin{enumerate}
+    \item Input from OpenWeather matched values seen in both MQTT output and InfluxDB records
+    \item No data loss or mismatch detected
+\end{enumerate} \\
+\hline
+\textbf{Case Status} & Passed \\
+\hline
+\end{tabular}
+\caption{Test Case TC-05}
+\label{tab:tc5}
+\end{table}

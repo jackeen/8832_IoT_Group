@@ -1,0 +1,35 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{10cm}|}
+\hline
+\textbf{ID} & TC-1 \\
+\hline
+\textbf{Title} & Verify that Node-RED fetches weather data via HTTP from OpenWeather APIs \\
+\hline
+\textbf{Preconditions} & Node-RED is deployed and configured with the correct API key \\
+\hline
+\textbf{Steps} & \vspace{-20pt}
+\begin{enumerate}
+    \item Deploy Node-RED flow with HTTP request node
+    \item Trigger data fetch
+    \item Observe debug node or log
+\end{enumerate} \\
+\hline
+\textbf{Expected Result} &  \vspace{-20pt}
+\begin{enumerate}
+    \item Node-RED successfully fetched current weather data and 5-day forecast using HTTP.
+    \item JSON structure matched expectations.
+\end{enumerate} \\
+\hline
+\textbf{Actual Result} &  \vspace{-20pt}
+\begin{enumerate}
+    \item Node-RED successfully fetched current weather data and 5-day forecast using HTTP.
+    \item JSON structure matched expectations.
+\end{enumerate} \\
+\hline
+\textbf{Case Status} & Passed \\
+\hline
+\end{tabular}
+\caption{Test Case TC-1}
+\label{tab:tc1}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{10cm}|}
+\hline
+\textbf{ID} & TC-02 \\
+\hline
+\textbf{Title} & Verify that weather data is correctly written to InfluxDB \\
+\hline
+\textbf{Preconditions} & InfluxDB is running and accessible \\
+\hline
+\textbf{Steps} & \vspace{-20pt}
+\begin{enumerate}
+    \item Allow Node-RED to send parsed data to InfluxDB
+    \item Use InfluxDB CLI or UI to query recent data
+\end{enumerate} \\
+\hline
+\textbf{Expected Result} & Data points appeared in InfluxDB with correct timestamps. \\
+\hline
+\textbf{Actual Result} & Data points appeared in InfluxDB with correct timestamps. \\
+\hline
+\textbf{Case Status} & Passed \\
+\hline
+\end{tabular}
+\caption{Test Case TC-02}
+\label{tab:tc2}
+\end{table}

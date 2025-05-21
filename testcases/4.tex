@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{10cm}|}
+\hline
+\textbf{ID} & TC-04 \\
+\hline
+\textbf{Title} & Verify that current and forecast weather data is published to MQTT topic zzzw/iot/weather \\
+\hline
+\textbf{Preconditions} & Weather data has been written correctly into InfluxDB \\
+\hline
+\textbf{Steps} & \vspace{-20pt}\begin{enumerate}
+    \item Parse and format the result
+    \item Send message to MQTT broker
+\end{enumerate} \\
+\hline
+\textbf{Expected Result} & MQTT messages were sent at regular intervals containing JSON formatted weather data \\
+\hline
+\textbf{Actual Result} & MQTT messages were sent at regular intervals containing JSON formatted weather data \\
+\hline
+\textbf{Case Status} & Passed \\
+\hline
+\end{tabular}
+\caption{Test Case TC-04}
+\label{tab:tc4}
+\end{table}

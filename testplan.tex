@@ -1,0 +1,39 @@
+\section{Test Plan}
+
+\subsection{Objectives}
+\begin{itemize}
+    \item Ensure accurate weather data retrieval and alert generation.
+    \item Validate reliable data flow across APIs, MQTT topics, and the database.
+\end{itemize}
+
+\subsection{Scopes}
+\begin{itemize}
+    \item Node-RED logic for HTTP fetch, alert logic, and MQTT publishing.
+    \item OpenWeather API interaction.
+    \item MQTT communication (zzw/iot/alarm, zzw/iot/weather).
+    \item InfluxDB write operations.
+\end{itemize}
+
+\subsection{Test Types}
+\begin{itemize}
+    \item Weather Data Fetching: Node-RED fetches from OpenWeather at scheduled intervals via HTTP.
+    \item InfluxDB Integration: Data is correctly written to InfluxDB with valid timestamps and fields.
+    \item Alert Generation: High/low temperature or rain day triggers correctly detect conditions from forecast data.
+    \item Weather Data Publishing: Current and forecast weather data is processed and published to zzw/iot/weather.
+    \item End-to-End Data Flow: Verify full pipeline: API → Node-RED → MQTT/InfluxDB; Confirm output matches input (e.g. temperature values and timestamps).
+\end{itemize}
+
+\subsection{Entry Criteria}
+\begin{itemize}
+    \item Node-RED flows deployed.
+    \item OpenWeather API key configured.
+    \item OpenWeather API key configured.
+    \item InfluxDB instance running.
+\end{itemize}
+
+\subsection{Exit Criteria}
+\begin{itemize}
+    \item All functional and API paths tested.
+    \item System demonstrates stable data flow and correct alert behavior.
+\end{itemize}
+

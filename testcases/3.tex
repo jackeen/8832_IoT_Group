@@ -1,0 +1,26 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{10cm}|}
+\hline
+\textbf{ID} & TC-03 \\
+\hline
+\textbf{Title} & Verify that Node-RED triggers high/low temperature alerts \\
+\hline
+\textbf{Preconditions} & Valid 5-day forecast data fetched \\
+\hline
+\textbf{Steps} & \vspace{-20pt}\begin{enumerate}
+    \item Inject mock forecast data with temperature > threshold
+    \item Observe flow logic execution
+    \item Check MQTT publish to topic zzzw/iot/alarm
+\end{enumerate} \\
+\hline
+\textbf{Expected Result} & Node-RED triggered a high-temperature alert and published a correctly formatted MQTT message to zzzw/iot/alarm \\
+\hline
+\textbf{Actual Result} & Node-RED triggered a high-temperature alert and published a correctly formatted MQTT message to zzzw/iot/alarm \\
+\hline
+\textbf{Case Status} & Passed \\
+\hline
+\end{tabular}
+\caption{Test Case TC-03}
+\label{tab:tc3}
+\end{table}
